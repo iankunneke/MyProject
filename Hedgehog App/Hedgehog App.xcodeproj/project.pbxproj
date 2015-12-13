@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BAD528F1C174C9C006A0CD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD528E1C174C9C006A0CD6 /* main.m */; };
+		8BAD52921C174C9C006A0CD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD52911C174C9C006A0CD6 /* AppDelegate.m */; };
+		8BAD52981C174C9C006A0CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BAD52961C174C9C006A0CD6 /* Main.storyboard */; };
+		8BAD529A1C174C9C006A0CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BAD52991C174C9C006A0CD6 /* Assets.xcassets */; };
+		8BAD529D1C174C9C006A0CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BAD529B1C174C9C006A0CD6 /* LaunchScreen.storyboard */; };
+		8BAD52A81C174C9C006A0CD6 /* Hedgehog_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD52A71C174C9C006A0CD6 /* Hedgehog_AppTests.m */; };
+		8BAD52B31C174C9C006A0CD6 /* Hedgehog_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD52B21C174C9C006A0CD6 /* Hedgehog_AppUITests.m */; };
+		8BAD52C21C174D65006A0CD6 /* HedgehogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD52C11C174D65006A0CD6 /* HedgehogTableViewController.m */; };
+		8BAD52C51C174F79006A0CD6 /* FactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD52C41C174F79006A0CD6 /* FactViewController.m */; };
+		8BAD52C71C174FA9006A0CD6 /* Hedgehog.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BAD52C61C174FA9006A0CD6 /* Hedgehog.json */; };
+		8BAD52CD1C1756EA006A0CD6 /* Hedgehogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD52CC1C1756EA006A0CD6 /* Hedgehogs.m */; };
+		8BAD52D01C1881DC006A0CD6 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD52CF1C1881DC006A0CD6 /* OptionsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BAD52A41C174C9C006A0CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BAD52821C174C9C006A0CD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BAD52891C174C9C006A0CD6;
+			remoteInfo = "Hedgehog App";
+		};
+		8BAD52AF1C174C9C006A0CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BAD52821C174C9C006A0CD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BAD52891C174C9C006A0CD6;
+			remoteInfo = "Hedgehog App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BAD528A1C174C9C006A0CD6 /* Hedgehog App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hedgehog App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAD528E1C174C9C006A0CD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BAD52901C174C9C006A0CD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BAD52911C174C9C006A0CD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BAD52971C174C9C006A0CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BAD52991C174C9C006A0CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BAD529C1C174C9C006A0CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BAD529E1C174C9C006A0CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAD52A31C174C9C006A0CD6 /* Hedgehog AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hedgehog AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAD52A71C174C9C006A0CD6 /* Hedgehog_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hedgehog_AppTests.m; sourceTree = "<group>"; };
+		8BAD52A91C174C9C006A0CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAD52AE1C174C9C006A0CD6 /* Hedgehog AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hedgehog AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAD52B21C174C9C006A0CD6 /* Hedgehog_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hedgehog_AppUITests.m; sourceTree = "<group>"; };
+		8BAD52B41C174C9C006A0CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAD52C01C174D65006A0CD6 /* HedgehogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HedgehogTableViewController.h; sourceTree = "<group>"; };
+		8BAD52C11C174D65006A0CD6 /* HedgehogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HedgehogTableViewController.m; sourceTree = "<group>"; };
+		8BAD52C31C174F79006A0CD6 /* FactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactViewController.h; sourceTree = "<group>"; };
+		8BAD52C41C174F79006A0CD6 /* FactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactViewController.m; sourceTree = "<group>"; };
+		8BAD52C61C174FA9006A0CD6 /* Hedgehog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hedgehog.json; sourceTree = "<group>"; };
+		8BAD52CB1C1756EA006A0CD6 /* Hedgehogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hedgehogs.h; sourceTree = "<group>"; };
+		8BAD52CC1C1756EA006A0CD6 /* Hedgehogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hedgehogs.m; sourceTree = "<group>"; };
+		8BAD52CE1C1881DC006A0CD6 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		8BAD52CF1C1881DC006A0CD6 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BAD52871C174C9C006A0CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAD52A01C174C9C006A0CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAD52AB1C174C9C006A0CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BAD52811C174C9C006A0CD6 = {
+			isa = PBXGroup;
+			children = (
+				8BAD528C1C174C9C006A0CD6 /* Hedgehog App */,
+				8BAD52A61C174C9C006A0CD6 /* Hedgehog AppTests */,
+				8BAD52B11C174C9C006A0CD6 /* Hedgehog AppUITests */,
+				8BAD528B1C174C9C006A0CD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BAD528B1C174C9C006A0CD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD528A1C174C9C006A0CD6 /* Hedgehog App.app */,
+				8BAD52A31C174C9C006A0CD6 /* Hedgehog AppTests.xctest */,
+				8BAD52AE1C174C9C006A0CD6 /* Hedgehog AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BAD528C1C174C9C006A0CD6 /* Hedgehog App */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD52C61C174FA9006A0CD6 /* Hedgehog.json */,
+				8BAD52901C174C9C006A0CD6 /* AppDelegate.h */,
+				8BAD52911C174C9C006A0CD6 /* AppDelegate.m */,
+				8BAD52C01C174D65006A0CD6 /* HedgehogTableViewController.h */,
+				8BAD52C11C174D65006A0CD6 /* HedgehogTableViewController.m */,
+				8BAD52C31C174F79006A0CD6 /* FactViewController.h */,
+				8BAD52C41C174F79006A0CD6 /* FactViewController.m */,
+				8BAD52CE1C1881DC006A0CD6 /* OptionsViewController.h */,
+				8BAD52CF1C1881DC006A0CD6 /* OptionsViewController.m */,
+				8BAD52CB1C1756EA006A0CD6 /* Hedgehogs.h */,
+				8BAD52CC1C1756EA006A0CD6 /* Hedgehogs.m */,
+				8BAD52961C174C9C006A0CD6 /* Main.storyboard */,
+				8BAD52991C174C9C006A0CD6 /* Assets.xcassets */,
+				8BAD529B1C174C9C006A0CD6 /* LaunchScreen.storyboard */,
+				8BAD529E1C174C9C006A0CD6 /* Info.plist */,
+				8BAD528D1C174C9C006A0CD6 /* Supporting Files */,
+			);
+			path = "Hedgehog App";
+			sourceTree = "<group>";
+		};
+		8BAD528D1C174C9C006A0CD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD528E1C174C9C006A0CD6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BAD52A61C174C9C006A0CD6 /* Hedgehog AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD52A71C174C9C006A0CD6 /* Hedgehog_AppTests.m */,
+				8BAD52A91C174C9C006A0CD6 /* Info.plist */,
+			);
+			path = "Hedgehog AppTests";
+			sourceTree = "<group>";
+		};
+		8BAD52B11C174C9C006A0CD6 /* Hedgehog AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD52B21C174C9C006A0CD6 /* Hedgehog_AppUITests.m */,
+				8BAD52B41C174C9C006A0CD6 /* Info.plist */,
+			);
+			path = "Hedgehog AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BAD52891C174C9C006A0CD6 /* Hedgehog App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAD52B71C174C9C006A0CD6 /* Build configuration list for PBXNativeTarget "Hedgehog App" */;
+			buildPhases = (
+				8BAD52861C174C9C006A0CD6 /* Sources */,
+				8BAD52871C174C9C006A0CD6 /* Frameworks */,
+				8BAD52881C174C9C006A0CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hedgehog App";
+			productName = "Hedgehog App";
+			productReference = 8BAD528A1C174C9C006A0CD6 /* Hedgehog App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BAD52A21C174C9C006A0CD6 /* Hedgehog AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAD52BA1C174C9C006A0CD6 /* Build configuration list for PBXNativeTarget "Hedgehog AppTests" */;
+			buildPhases = (
+				8BAD529F1C174C9C006A0CD6 /* Sources */,
+				8BAD52A01C174C9C006A0CD6 /* Frameworks */,
+				8BAD52A11C174C9C006A0CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BAD52A51C174C9C006A0CD6 /* PBXTargetDependency */,
+			);
+			name = "Hedgehog AppTests";
+			productName = "Hedgehog AppTests";
+			productReference = 8BAD52A31C174C9C006A0CD6 /* Hedgehog AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BAD52AD1C174C9C006A0CD6 /* Hedgehog AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAD52BD1C174C9C006A0CD6 /* Build configuration list for PBXNativeTarget "Hedgehog AppUITests" */;
+			buildPhases = (
+				8BAD52AA1C174C9C006A0CD6 /* Sources */,
+				8BAD52AB1C174C9C006A0CD6 /* Frameworks */,
+				8BAD52AC1C174C9C006A0CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BAD52B01C174C9C006A0CD6 /* PBXTargetDependency */,
+			);
+			name = "Hedgehog AppUITests";
+			productName = "Hedgehog AppUITests";
+			productReference = 8BAD52AE1C174C9C006A0CD6 /* Hedgehog AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BAD52821C174C9C006A0CD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					8BAD52891C174C9C006A0CD6 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					8BAD52A21C174C9C006A0CD6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 8BAD52891C174C9C006A0CD6;
+					};
+					8BAD52AD1C174C9C006A0CD6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 8BAD52891C174C9C006A0CD6;
+					};
+				};
+			};
+			buildConfigurationList = 8BAD52851C174C9C006A0CD6 /* Build configuration list for PBXProject "Hedgehog App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BAD52811C174C9C006A0CD6;
+			productRefGroup = 8BAD528B1C174C9C006A0CD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BAD52891C174C9C006A0CD6 /* Hedgehog App */,
+				8BAD52A21C174C9C006A0CD6 /* Hedgehog AppTests */,
+				8BAD52AD1C174C9C006A0CD6 /* Hedgehog AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BAD52881C174C9C006A0CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAD52C71C174FA9006A0CD6 /* Hedgehog.json in Resources */,
+				8BAD529D1C174C9C006A0CD6 /* LaunchScreen.storyboard in Resources */,
+				8BAD529A1C174C9C006A0CD6 /* Assets.xcassets in Resources */,
+				8BAD52981C174C9C006A0CD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAD52A11C174C9C006A0CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAD52AC1C174C9C006A0CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BAD52861C174C9C006A0CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAD52C51C174F79006A0CD6 /* FactViewController.m in Sources */,
+				8BAD52921C174C9C006A0CD6 /* AppDelegate.m in Sources */,
+				8BAD52CD1C1756EA006A0CD6 /* Hedgehogs.m in Sources */,
+				8BAD52C21C174D65006A0CD6 /* HedgehogTableViewController.m in Sources */,
+				8BAD528F1C174C9C006A0CD6 /* main.m in Sources */,
+				8BAD52D01C1881DC006A0CD6 /* OptionsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAD529F1C174C9C006A0CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAD52A81C174C9C006A0CD6 /* Hedgehog_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAD52AA1C174C9C006A0CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAD52B31C174C9C006A0CD6 /* Hedgehog_AppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BAD52A51C174C9C006A0CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BAD52891C174C9C006A0CD6 /* Hedgehog App */;
+			targetProxy = 8BAD52A41C174C9C006A0CD6 /* PBXContainerItemProxy */;
+		};
+		8BAD52B01C174C9C006A0CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BAD52891C174C9C006A0CD6 /* Hedgehog App */;
+			targetProxy = 8BAD52AF1C174C9C006A0CD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BAD52961C174C9C006A0CD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BAD52971C174C9C006A0CD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BAD529B1C174C9C006A0CD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BAD529C1C174C9C006A0CD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BAD52B51C174C9C006A0CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8BAD52B61C174C9C006A0CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BAD52B81C174C9C006A0CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hedgehog App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.none.Hedgehog-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BAD52B91C174C9C006A0CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hedgehog App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.none.Hedgehog-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8BAD52BB1C174C9C006A0CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hedgehog AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.none.Hedgehog-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hedgehog App.app/Hedgehog App";
+			};
+			name = Debug;
+		};
+		8BAD52BC1C174C9C006A0CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hedgehog AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.none.Hedgehog-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hedgehog App.app/Hedgehog App";
+			};
+			name = Release;
+		};
+		8BAD52BE1C174C9C006A0CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hedgehog AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.none.Hedgehog-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hedgehog App";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8BAD52BF1C174C9C006A0CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hedgehog AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.none.Hedgehog-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hedgehog App";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BAD52851C174C9C006A0CD6 /* Build configuration list for PBXProject "Hedgehog App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAD52B51C174C9C006A0CD6 /* Debug */,
+				8BAD52B61C174C9C006A0CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAD52B71C174C9C006A0CD6 /* Build configuration list for PBXNativeTarget "Hedgehog App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAD52B81C174C9C006A0CD6 /* Debug */,
+				8BAD52B91C174C9C006A0CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8BAD52BA1C174C9C006A0CD6 /* Build configuration list for PBXNativeTarget "Hedgehog AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAD52BB1C174C9C006A0CD6 /* Debug */,
+				8BAD52BC1C174C9C006A0CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8BAD52BD1C174C9C006A0CD6 /* Build configuration list for PBXNativeTarget "Hedgehog AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAD52BE1C174C9C006A0CD6 /* Debug */,
+				8BAD52BF1C174C9C006A0CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BAD52821C174C9C006A0CD6 /* Project object */;
+}

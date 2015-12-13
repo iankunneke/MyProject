@@ -1,0 +1,17 @@
+[
+	{
+        "name": "European hedgehog",
+		"fact": "European hedgehogs in the UK hibernate throughout winter",
+		"continent": "Europe"
+	},
+	{
+        "name": "Long-eared hedgehog",
+		"fact": "Known to carry diseases as bad as the plague",
+		"continent": "Asia"
+	},
+	{
+        "name": "Four-toed hedgehog",
+		"fact": "Has a high tolerance for toxins",
+		"continent": "Africa"
+	}
+]
