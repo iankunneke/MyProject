@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -81,7 +82,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h8m-3f-b9i">
-                            <rect key="frame" x="0.0" y="192" width="600" height="70"/>
+                            <rect key="frame" x="0.0" y="192" width="600" height="102"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -167,6 +168,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mz-LA-hac">
+                                <rect key="frame" x="20" y="236" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh6-cp-MM4">
+                                <rect key="frame" x="284" y="391" width="32" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Run!"/>
+                                <connections>
+                                    <action selector="run:" destination="XVR-rt-tkh" eventType="touchUpInside" id="fHO-gl-xxu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,7 +192,11 @@
                             <constraint firstItem="WOf-nr-44q" firstAttribute="top" secondItem="nmS-hx-Uyv" secondAttribute="bottom" constant="8" id="KTN-wQ-h5Z"/>
                             <constraint firstItem="nmS-hx-Uyv" firstAttribute="width" secondItem="l2e-8u-vQl" secondAttribute="width" multiplier="0.5" id="PCj-IY-589"/>
                             <constraint firstItem="WOf-nr-44q" firstAttribute="centerX" secondItem="nmS-hx-Uyv" secondAttribute="centerX" id="Tsv-8i-OiZ"/>
+                            <constraint firstItem="dh6-cp-MM4" firstAttribute="centerX" secondItem="l2e-8u-vQl" secondAttribute="centerX" id="W4N-L3-dmV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6mz-LA-hac" secondAttribute="leading" id="bm7-ng-uvr"/>
+                            <constraint firstItem="6mz-LA-hac" firstAttribute="centerY" secondItem="l2e-8u-vQl" secondAttribute="centerY" id="dwg-6J-50Q"/>
                             <constraint firstItem="nmS-hx-Uyv" firstAttribute="centerX" secondItem="l2e-8u-vQl" secondAttribute="centerX" id="fOI-9Y-XaM"/>
+                            <constraint firstItem="dh6-cp-MM4" firstAttribute="top" secondItem="WOf-nr-44q" secondAttribute="bottom" constant="214.5" id="luN-dT-I8L"/>
                             <constraint firstItem="WOf-nr-44q" firstAttribute="width" secondItem="l2e-8u-vQl" secondAttribute="width" multiplier="0.75" id="p4S-tG-Eyt"/>
                         </constraints>
                         <variation key="default">
@@ -199,6 +216,8 @@
                     <connections>
                         <outlet property="continentLabel" destination="nmS-hx-Uyv" id="6of-t1-DqI"/>
                         <outlet property="factLabel" destination="WOf-nr-44q" id="c81-k1-Rma"/>
+                        <outlet property="runButton" destination="dh6-cp-MM4" id="xFB-np-6Zd"/>
+                        <outlet property="sonic" destination="6mz-LA-hac" id="YF2-Ae-BJY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prv-3t-QwO" userLabel="First Responder" sceneMemberID="firstResponder"/>

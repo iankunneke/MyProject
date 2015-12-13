@@ -22,7 +22,6 @@
 
 
 - (void)loadHedgehogs;
-- (void)fetchFeed;
 
 @end
 
@@ -70,6 +69,9 @@
 - (void)viewDidLoad
 {
     self.title = @"Hedgehog banner";
+    
+    
+    
 //    self.weatherLabel.text = ;
 
     
