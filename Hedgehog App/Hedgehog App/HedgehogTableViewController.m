@@ -17,8 +17,7 @@
 }
 
 @property(weak, nonatomic) IBOutlet UILabel *weatherLabel;
-@property(nonatomic, strong) NSURLSession *session;
-@property(nonatomic, copy) NSArray *weather;
+@property (nonatomic) double temperature;
 
 
 - (void)loadHedgehogs;
@@ -27,41 +26,41 @@
 
 @implementation HedgehogTableViewController
 
-- (instancetype)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    
-    if (self)
-    {
-    
-        NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
-        _session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
-        
-        [self fetchFeed];
-    }
-    return self;
-}
+//- (instancetype)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    
+//    if (self)
+//    {
+//    
+//        NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+//        _session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
+//        
+//        [self fetchFeed];
+//    }
+//    return self;
+//}
 
-- (void)fetchFeed
-{
-    NSString *requestString = @"http://api.openweathermap.org/data/2.5/weather?q=orlando&appid=2de143494c0b295cca9337e1e96b00e0";
-    NSURL *url = [NSURL URLWithString:requestString];
-    NSURLRequest *req = [NSURLRequest requestWithURL:url];
-    
-    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:req completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
-    {
+//- (void)fetchFeed
+//{
+//    NSString *requestString = @"http://api.openweathermap.org/data/2.5/weather?q=orlando&appid=2de143494c0b295cca9337e1e96b00e0";
+//    NSURL *url = [NSURL URLWithString:requestString];
+//    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+//    
+//    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:req completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
+//    {
 //        NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 //        NSLog(@"%@", json);
         
-        NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+//        NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 //        NSLog(@"%@", jsonObject);
-        self.weather = jsonObject[@"main"];
-        
-        NSLog(@"%@", self.weather);
-        
-    }];
-    [dataTask resume];
-}
+//        self.weatherLabel.text = jsonObject[@"main"];
+//        
+//        NSLog(@"%@", self.weather);
+//        
+//    }];
+//    [dataTask resume];
+//}
 
 
 
@@ -69,13 +68,26 @@
 - (void)viewDidLoad
 {
     self.title = @"Hedgehog banner";
-    
-    
-    
-//    self.weatherLabel.text = ;
 
-    
     [super viewDidLoad];
+    
+    NSString *urlString = [NSString stringWithFormat:@"https://api.forecast.io/forecast/1ef384b7594e9e52b696349355dbb1ef/28.4158,-81.2989"];
+    
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    
+    NSError *error;
+    
+    NSMutableDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    
+    
+    NSDictionary *currently = json [@"currently"];
+    self.temperature = [currently [@"temperature"] doubleValue];
+    
+    NSLog(@"%@", [currently objectForKey:@"temperature"]);
+    
+    self.weatherLabel.text = [NSString stringWithFormat:@"Orlando is currently %@℉", [currently objectForKey:@"temperature"]];
     
     
     theHedgehogs = [[NSMutableArray alloc]init];
@@ -207,10 +219,4 @@
         [theHedgehogs addObject:aHedgehog];
     }
 }
-
-
-
-
-
-
 @end
